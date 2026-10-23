@@ -1,0 +1,24 @@
+.thumber-overlay {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: inherit;
+  pointer-events: none;
+  display: block;
+}
+
+html.thumber-hide-preview ytd-video-preview {
+  visibility: hidden !important;
+}
+
+.thumber-reveal {
+  animation: thumber-reveal 2.5s ease-out;
+  border-radius: 14px;
+}
+
+@keyframes thumber-reveal {
+  0%, 60% { box-shadow: 0 0 0 4px #ff3d5a, 0 0 32px 6px rgba(255, 61, 90, 0.55); }
+  100% { box-shadow: 0 0 0 4px rgba(255, 61, 90, 0), 0 0 32px 6px rgba(255, 61, 90, 0); }
+}
